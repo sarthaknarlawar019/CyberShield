@@ -1,0 +1,43 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Backend API",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/server.js",
+      "cwd": "${workspaceFolder}/backend",
+      "envFile": "${workspaceFolder}/backend/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "ML Service",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/ml-service/app.py",
+      "cwd": "${workspaceFolder}/ml-service",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Frontend",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm start",
+      "cwd": "${workspaceFolder}/frontend"
+    },
+    {
+      "name": "Open CyberShield",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend/src"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run CyberShield",
+      "configurations": ["Backend API", "ML Service", "Frontend", "Open CyberShield"],
+      "stopAll": true
+    }
+  ]
+}

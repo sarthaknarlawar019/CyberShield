@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title>CyberShield logo</title>
+  <defs>
+    <linearGradient id="shieldGradient" x1="18" y1="12" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.56" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#f43f5e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="#08111f"/>
+  <path d="M64 14 102 28v31c0 26-15 45-38 55-23-10-38-29-38-55V28l38-14Z" fill="url(#shieldGradient)"/>
+  <path d="M64 25 92 35v24c0 18-10 32-28 41-18-9-28-23-28-41V35l28-10Z" fill="#08111f" opacity=".9"/>
+  <path d="M46 65c0-11 8-19 19-19 7 0 13 3 17 8l-9 7c-2-3-5-4-8-4-5 0-8 3-8 8s3 8 8 8c4 0 7-2 9-5l9 6c-4 6-10 10-18 10-11 0-19-8-19-19Z" fill="#e0f2fe"/>
+  <path d="M83 44h12v42H83z" fill="#2dd4bf"/>
+</svg>
